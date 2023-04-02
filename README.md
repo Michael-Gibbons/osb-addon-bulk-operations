@@ -3,5 +3,5 @@
 ## Install
 
 ```
-npm run osb addon add https://github.com/Michael-Gibbons/osb-addon-example
+npm run osb addon add https://github.com/Michael-Gibbons/osb-addon-bulk-operations
 ```

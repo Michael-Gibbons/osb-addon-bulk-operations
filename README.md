@@ -15,7 +15,7 @@ How you choose to implement these functions is up to you, in `requestData.js` yo
 # Installation
 
 ```
-  npm run osb addon add https://github.com/Michael-Gibbons/osb-addon-bulk-operations/
+  npm run osb addon add https://github.com/Michael-Gibbons/osb-addon-bulk-operations
 ```
 
 ## performBulkQuery

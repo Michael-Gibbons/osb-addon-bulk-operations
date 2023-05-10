@@ -12,6 +12,12 @@ The end product of this addon is these two functions.
 
 How you choose to implement these functions is up to you, in `requestData.js` you can see an example of a cron schedule being used as that is the most common usage but you can use them when the application starts, in response to a route or webhook, etc. Just import the functions from index.js.
 
+# Installation
+
+```
+  npm run osb addon add https://github.com/Michael-Gibbons/osb-addon-bulk-operations/
+```
+
 ## performBulkQuery
 
 This function accepts an object with the properties `gqlClient`, `query`, and `key`.

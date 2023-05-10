@@ -12,6 +12,6 @@
   "dependencies": {
     "@shopify/shopify-api": "^6.2.0",
     "axios": "^1.3.4",
-    "json-chalkify": "^1.0.2"
+    "xml2js": "^0.5.0"
   }
 }

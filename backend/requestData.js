@@ -4,6 +4,17 @@ import prisma from "../../prisma/index.js";
 import loadOfflineSession from "@shopify/shopify-api/dist/utils/load-offline-session.js";
 import Shopify from "../../helpers/shopify-context.js";
 
+const PRODUCTS_QUERY = `
+{
+  products {
+    edges {
+      node {
+        id
+      }
+    }
+  }
+}`
+
 const CREATE_PRODUCTS_MUTATION = `
   mutation productCreate($input: ProductInput!) {
     productCreate(input: $input) {
@@ -45,12 +56,12 @@ const requestData = () => {
       //   query: PRODUCTS_QUERY,
       //   key: 'products'
       // })// query key 'products' used in register.js
-      performBulkMutation({
-        gqlClient,
-        mutation: CREATE_PRODUCTS_MUTATION,
-        variables: createProductsInput,
-        key: 'products',
-      })
+      // performBulkMutation({
+      //   gqlClient,
+      //   mutation: CREATE_PRODUCTS_MUTATION,
+      //   variables: createProductsInput,
+      //   key: 'products',
+      // })
     }
   });
 
